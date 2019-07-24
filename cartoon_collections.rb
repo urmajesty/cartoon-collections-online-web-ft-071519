@@ -13,8 +13,17 @@ end
 end
 
 def long_planeteer_calls(long_calls)
-long_calls.each do |call|
-    if call.length > 4
+def long_planeteer_calls(array) 
+  i = 0 
+  if  array.any? {|i| i.length > 4}
+    return true
+  else 
+    return false
+  i = i + 1
+  end 
+end
+
+long_planeteer_calls(call_screams)
   
     end
     return long_planeteer_calls(long_calls)
